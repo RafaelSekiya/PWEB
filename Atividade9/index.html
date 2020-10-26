@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 9</title>
+</head>
+<body>
+  <script>
+
+    
+    function Retangulo(altura, largura) {
+      this.altura = altura;
+      this.largura = largura;
+
+      this.getArea = function() {
+        return this.altura * this.largura;
+      }
+    }
+
+    altura = parseFloat(prompt("Informe a altura:"));
+    largura = parseFloat(prompt("Informe a largura:"));
+
+    var retangulo = new Retangulo(algura, largura);
+    alert("Área total: " + retagulo.getArea());
+
+
+ 
+    function Conta(nomeCorr, banco, numConta, saldo) {
+      this.nomeCorr = nomeCorr;
+      this.banco = banco;
+      this.numConta = numConta;
+      this.saldo = saldo;
+
+      this.getNomeCorr = function() {
+        return this.nomeCorr;
+      }
+
+      this.getBanco = function() {
+        return this.banco;
+      }
+
+      this.getNumConta = function() {
+        return this.numConta;
+      }
+
+      this.getSaldo = function() {
+        return this.saldo;
+      }
+
+      this.setNomeCorr = function(nomeCorr) {
+        this.nomeCorr = nomeCorr;
+      }
+
+      this.setBanco = function(banco) {
+        this.banco = banco;
+      }
+
+      this.setNumConta = function(numConta) {
+        this.numConta = numConta;
+      }
+
+      this.setSaldo = function(saldo) {
+        this.saldo = saldo;
+      }
+    }
+
+    function Corrente(saldoEspec) {
+      this.saldoEspec = saldoEspec;
+
+      this.getSaldoEspec = function() {
+        return this.getSaldoEspec;
+      }
+
+      this.setSaldoEspec = function(saldoEspec) {
+        this.saldoEspec = saldoEspec;
+      }
+    }
+    
+    function Poupanca(juros, dataVenc) {
+      this.juros = juros;
+      this.dataVenc = dataVenc;
+
+      this.getJuros = function() {
+        return this.juros;
+      }
+
+      this.setJuros = function(juros) {
+        this.juros = juros;
+      }
+
+      this.getDataVenc = function() {
+        return this.dataVenc;
+      }
+
+      this.setDataVenc = function(dataVenc) {
+        this.dataVenc = dataVenc;
+      }
+    }
+  </script>
+</body>
+</html>
