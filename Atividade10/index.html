@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 10</title>
+</head>
+<body>
+  <div onmousedown="quebrarJanela(this)" onmousemove="abrirJanela(this)" onmouseout="fecharJanela(this)" style="width: 200px; height: 400px;">
+    <img src="../Exercicios_JavaScript/janelafechada.png" alt="Janela fechada">
+  </div>
+  <script>
+		function quebrarJanela(obj) {
+			obj.innerHTML = `<img src="../Exercicios_JavaScript/janelaquebra.png" alt="Janela quebrada">`;
+		}
+
+		function abrirJanela(obj) {
+			obj.innerHTML = `<img src="../Exercicios_JavaScript/janelaaberta.png" alt="Janela aberta">`;
+				}
+		
+		function fecharJanela(obj) {
+			obj.innerHTML = `<img src="../Exercicios_JavaScript/janelafechada.png" alt="Janela fechada">`;
+		}
+	</script>
+</body>
+</html>
